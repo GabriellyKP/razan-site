@@ -1,0 +1,11 @@
+export { default as IconHeadset } from "./IconHeadset";
+export { default as IconTeam } from "./IconTeam";
+export { default as IconSolutions } from "./IconSolutions";
+export { default as IconEthic } from "./IconEthic";
+export { default as IconInovation } from "./IconInovation";
+export { default as IconHonesty } from "./IconHonesty";
+export { default as IconResponsibility } from "./IconResponsibility";
+export { default as IconOrderItem } from "./IconOrderItem";
+export { default as IconWhatsapp } from "./IconWhatsapp";
+export { default as IconLinkedin } from "./IconLinkedin";
+export { default as IconInstagram } from "./IconInstagram";
