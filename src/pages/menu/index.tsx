@@ -18,11 +18,11 @@ import MenuIcon from "@mui/icons-material/Menu";
 import { useState } from "react";
 
 const pages = [
-  { name: "Ínicio", url: "/home#home" },
-  { name: "Quem Somos", url: "/home#about_us" },
-  { name: "Serviços", url: "/home#services" },
-  { name: "Projetos", url: "/home#projects" },
-  { name: "Contato", url: "/home#contact" },
+  { name: "Ínicio", url: "#home" },
+  { name: "Quem Somos", url: "#about_us" },
+  { name: "Serviços", url: "#services" },
+  { name: "Projetos", url: "#projects" },
+  { name: "Contato", url: "#contact" },
 ];
 
 export default function MenuBar() {
