@@ -1,8 +1,8 @@
 import { TextField, TextFieldProps } from "@mui/material";
 import { Controller, useFormContext } from "react-hook-form";
-import InputMask from 'react-input-mask';
 
 import get from "lodash/get";
+import {  PatternFormat } from "react-number-format";
 
 export interface IInputProps
   extends Omit<
@@ -46,34 +46,24 @@ export const Input = ({
       control={control}
       render={({ field: { onChange, value = "" } }) => (
       mask? (
-        <InputMask
-        mask={mask}
+        <PatternFormat  
+        format={mask} 
+        mask="_"
+        customInput={TextField} 
+        size="small"
+        required={required}
+        label={inputLabel}
         value={value}
+        placeholder={inputLabel}
+        multiline={multiline}
         onChange={onChange}
-        maskPlaceholder=""
-        maskChar=" "
-      >
-      {() => (
-        <TextField
-          variant="outlined"
-          size="small"
-          type={type}
-          required={required}
-          label={inputLabel}
-          value={value}
-          placeholder={inputLabel}
-          multiline={multiline}
-          onChange={onChange}
-          sx={{ ...sx }}
-          error={hasError}
-          {...(hasError && {
-            helperText: get(errors, `${[inputId]}.message`)?.toString(),
-          })}
-          {...(disabled && { disabled })}
-          {...rest}
-        />
-      )}
-        </InputMask>
+        sx={{ ...sx }}
+        error={hasError}
+        {...(hasError && {
+          helperText: get(errors, `${[inputId]}.message`)?.toString(),
+        })}
+        {...(disabled && { disabled })}
+      />
         ) : 
         <TextField
         variant="outlined"

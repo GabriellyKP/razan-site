@@ -159,7 +159,7 @@ export default function Contact() {
                       name={phoneInputId}
                       inputId={phoneInputId}
                       inputLabel={phoneInputLabel}
-                      mask="(99) 9 9999-9999"
+                      mask="(##) # ####-####"
                       required
                       sx={{ width: "100%" }}
                     />
