@@ -156,7 +156,6 @@ export default function Contact() {
                   </Grid>
                   <Grid item md={6} width={"100%"}>
                     <Input
-                      name={phoneInputId}
                       inputId={phoneInputId}
                       inputLabel={phoneInputLabel}
                       mask="(##) # ####-####"

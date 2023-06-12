@@ -47,7 +47,8 @@ export const Input = ({
       render={({ field: { onChange, value = "" } }) => (
       mask? (
         <PatternFormat  
-        format={mask} 
+        format={mask}
+        name={inputId} 
         mask="_"
         customInput={TextField} 
         size="small"
