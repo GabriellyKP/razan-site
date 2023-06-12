@@ -49,6 +49,8 @@ export default function Contact() {
   const currencyYear = currencyDate.getFullYear();
 
   const [showAlert, setShowAlert] = useState(false);
+  const [isSubmitting, setIsSubmitting] = useState(false);
+
 
   const handleOpenLinkedin = () => {
     const linkedinUrl =
@@ -62,6 +64,7 @@ export default function Contact() {
   };
 
   const onSubmit = async () => {
+    setIsSubmitting(true)
     setShowAlert(false);
     try {
       await emailjs
@@ -74,9 +77,11 @@ export default function Contact() {
         .then(
           () => {
             setShowAlert(true);
+            setIsSubmitting(false)
           },
           (error) => {
             console.log(error.text);
+            setIsSubmitting(false)
           }
         );
     } catch (error) {
@@ -156,6 +161,7 @@ export default function Contact() {
                   </Grid>
                   <Grid item md={6} width={"100%"}>
                     <Input
+                      name={phoneInputId}
                       inputId={phoneInputId}
                       inputLabel={phoneInputLabel}
                       mask="(##) # ####-####"
@@ -179,6 +185,7 @@ export default function Contact() {
                   variant="contained"
                   sx={{ mt: pxToRem(24), width: pxToRem(100) }}
                   type="submit"
+                  disabled={isSubmitting}
                 >
                   Enviar
                 </Button>
