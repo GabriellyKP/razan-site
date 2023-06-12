@@ -69,10 +69,10 @@ export default function Contact() {
     try {
       await emailjs
         .sendForm(
-          "service_32qfx3a",
-          "template_8w38ofj",
+          "service_7uwarlj",
+          "template_bvhtam9",
           "#contactForm",
-          "0umUJ-l22XStREVjp"
+          "ITu5NokixOZk6QzvH"
         )
         .then(
           () => {

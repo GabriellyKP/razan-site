@@ -31,8 +31,8 @@ export default function HomePage() {
       >
         <Grid item md={4}>
           <ReputationCard
-            title="Melhores Serviços"
-            text="Oferecemos os melhores serviços do mercado para atender suas necessidades empresariais e impulsionar seu sucesso."
+            title="Nossos serviços"
+            text="Oferecemos serviços para atender suas necessidades empresariais alavancando o seu sucesso."
             icon={<IconHeadset />}
           />
         </Grid>
