@@ -31,22 +31,21 @@ export default function HomePage() {
       >
         <Grid item md={4}>
           <ReputationCard
-            title="Nossos serviços"
+            title="Nossos Serviços"
             text="Oferecemos serviços para atender suas necessidades empresariais alavancando o seu sucesso."
             icon={<IconHeadset />}
           />
         </Grid>
         <Grid item md={4}>
           <ReputationCard
-            title="Melhor Equipe"
-            text="Temos a melhor equipe do mercado para levar seu negócio ao próximo
-          nível."
+            title="Nossa Equipe"
+            text="Temos uma equipe qualificada para impulsionar seu negócio ao próximo nível."
             icon={<IconTeam width={pxToRem(40)} />}
           />
         </Grid>
         <Grid item md={4}>
           <ReputationCard
-            title="Melhores Soluções"
+            title="Nossas Soluções"
             text="Encontre as soluções mais inovadoras e eficazes para sua empresa
           crescer e se destacar, contando com a nossa experiência e know-how."
             icon={<IconSolutions />}
