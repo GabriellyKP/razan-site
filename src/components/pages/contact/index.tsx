@@ -208,7 +208,7 @@ export default function Contact() {
             <Typography variant="h5" mr={pxToRem(8)}>
               Telefone:
             </Typography>
-            <Typography variant="body1">(41) 3227-1798</Typography>
+            <Typography variant="body1">(41) 3524-4228</Typography>
           </Box>
           <Box display="flex">
             <Typography variant="h5" mr={pxToRem(8)}>

@@ -8,7 +8,7 @@ export default function HomePage() {
     <Box>
       <Box
         sx={{
-          backgroundImage: 'url("fundo1.svg")',
+          backgroundImage: 'url("fundo1.png")',
           backgroundRepeat: "no-repeat",
           backgroundSize: "cover",
           mt: pxToRem(64),
